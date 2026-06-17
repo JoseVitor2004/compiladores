@@ -1,0 +1,13 @@
+int x = 0;
+int x = 5;
+
+bool flag = 1;
+flag++;
+
+if (x) {
+    int y = 0;
+}
+
+y = 99;
+
+bool resultado = 42;

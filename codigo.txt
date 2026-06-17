@@ -1,15 +1,20 @@
 int contador = 0;
-float nota = 5;
-bool aprovado = 0;
+float media = 0;
+int limite = 100;
 
-for (contador = 0; contador < 10; contador++) {
-    nota = nota + 1;
-    
-    if (nota >= 6 && !aprovado) {
-        aprovado = 1;
-    }
-    
-    if (nota == 10 || contador > 5) {
-        nota--;
-    }
+for (int i = 0; i < 10; i++) {
+    contador = contador + i;
+}
+
+if (contador < limite) {
+    int dobro = contador * 2;
+    media = dobro + 1;
+}
+
+int x = 0;
+int y = 10;
+
+for (int j = 0; j < y; j++) {
+    int parcial = j * j;
+    x = x + parcial;
 }
