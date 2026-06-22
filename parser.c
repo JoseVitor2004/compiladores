@@ -531,9 +531,8 @@ static TipoSemantico verificar_binop(AnalisadorSemantico *sem, TipoToken op, Tip
 
 // imprime a tabela de símbolos com o nível do escopo, tipo, nome e posição no arquivo. nível 0 são variáveis globais
 static void imprimir_tabela(AnalisadorSemantico *sem) {
-    printf("=== TABELA DE SIMBOLOS ===\n");
+    printf("Tabela de Simbolos\n");
     printf("%-4s %-8s %-16s %s\n", "Niv", "Tipo", "Nome", "Declarado em");
-    printf("%-4s %-8s %-16s %s\n", "---", "------", "---------------", "------------");
     for (int i = 0; i < sem->num_entradas; i++) {
         EntradaTabela *e = &sem->tabela[i];
         printf("[%d]  %-8s %-16s linha %d, coluna %d\n", e->nivel - 1, nome_sem[e->tipo], e->nome, e->linha, e->coluna);
